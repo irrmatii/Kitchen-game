@@ -1,0 +1,187 @@
+body{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    background-image: url("https://img.freepik.com/premium-vector/restaurant-kitchen-interior-with-equipment-vector-illustration_264840-398.jpg");
+    background-size: cover;
+}
+
+.chef{
+    background-image: url("https://static.tiktokemoji.com/202410/21/SWjGwVnP.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ingredients_container, .meal{
+    width: 100%;
+    height: 120px;
+}
+
+.ingredients_container{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.ingredients{
+    font-size: 28px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal{
+    background-image: url("https://www.jytdesign.com.tw/cdn/shop/products/Linear-system-table-config-1-oak-veneer-oak-Muuto-5000x3750-hi-res_934x700.png?v=1621174444");
+    background-size: cover;
+    background-position: 60% 60%;
+    display: flex;
+}
+
+.main{
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.empty_container{
+    max-width: 740px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.previous_score{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time{
+    width: 280px;
+    height: 20px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.time_bar{
+    width: 280px;
+    height: 20px;
+    background-color: #59be4a;
+    border-radius: 20px;
+}
+
+.prev_score{
+    width: 130px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.58);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.result_div{
+    flex-grow: 1;
+    position: relative;
+}
+
+.order_container{
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order{
+    max-width: 140px;
+    width: 100%;
+    height: 340px;
+    background-color: #f6f5f5;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_ingredients{
+    font-size: 30px;
+    text-align: center;
+}
+
+.prepare{
+    max-width: 740px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 110px;
+}
+
+.dish{
+    font-size: 60px;
+}
+
+.btn{
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #11bd55;
+    border-radius: 20px;
+}
+
+.serve{
+    display: none;
+}
+
