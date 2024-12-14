@@ -106,11 +106,10 @@ startBtn.onclick = () => {
 };
 let checkIngredients = [];
 serveBtn.onclick = () => {
-    //  timer
-    setTimer();
     randIndex = Math.floor(Math.random() * 10);
     if (checkIngredients.length === makeOrder.length &&
-        checkIngredients.every((value, index) => value === makeOrder[index])) {
+        checkIngredients.every((value, index) => value === makeOrder[index])) { //  timer
+        setTimer();
         totalScore += 10;
         score.innerHTML = `${totalScore}`;
         checkIngredients = [];
@@ -143,6 +142,19 @@ ingredients.forEach(ingredient => {
             // @ts-ignore
             checkIngredients.push(ingredient.textContent);
             console.log(checkIngredients);
+            const selectedDish = document.querySelectorAll(".dish");
+            selectedDish.forEach(dish => {
+                dish.onclick = () => {
+                    console.log("clicked");
+                    console.log(dish.textContent);
+                    dish.remove();
+                    // @ts-ignore
+                    const dishIndex = checkIngredients.indexOf(dish.textContent);
+                    if (dishIndex > -1) {
+                        checkIngredients.splice(dishIndex, 1); // Remove the dish from the array
+                    }
+                };
+            });
         }
     };
 });
